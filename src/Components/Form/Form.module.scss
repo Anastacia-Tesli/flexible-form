@@ -1,0 +1,32 @@
+@import '../../utils/scss-variables.scss';
+
+.form {
+  width: 760px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 96px 98px 92px;
+  box-sizing: border-box;
+  background-color: $form-background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  color: $main-text-color;
+  padding: 16px;
+  box-sizing: border-box;
+}

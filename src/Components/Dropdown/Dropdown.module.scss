@@ -1,0 +1,28 @@
+@import '../../utils/scss-variables.scss';
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: $main-text-color;
+}
+
+.select {
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid $inactive-color;
+  padding: 16px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondary-text-color;
+  &:focus {
+    outline: none !important;
+    border: 2px solid $accent-color;
+  }
+}

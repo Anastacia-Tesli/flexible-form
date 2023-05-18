@@ -1,0 +1,61 @@
+@import '../../utils/scss-variables.scss';
+
+.label {
+  width: max-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $main-text-color;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle {
+  margin: 0;
+  opacity: 0;
+  width: 49px;
+  height: 24px;
+}
+
+.switch {
+  position: absolute;
+  width: 49px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $form-background-color;
+  border: 1px solid $inactive-color;
+  border-radius: 32px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  &_type_active {
+    background-color: $accent-color;
+  }
+}
+
+.switch__element {
+  position: absolute;
+  content: '';
+  height: 18px;
+  width: 18px;
+  left: 26px;
+  top: 2.8px;
+  background-color: #f4f4f4;
+  border: 1px solid $inactive-color;
+  border-radius: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  &_type_active {
+    background: $form-background-color;
+    border: 1px solid $inactive-color;
+    -webkit-transform: translateX(-22px);
+    -ms-transform: translateX(-22px);
+    transform: translateX(-22px);
+  }
+}
